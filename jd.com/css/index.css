@@ -1,0 +1,175 @@
+    body {
+        width: 100%;
+        min-width: 320px;
+        max-width: 640px;
+        margin: 0 auto;
+        font-size: 14px;
+        font-family: -apple-system, Helvetica, sans-serif;
+        background-color: #ffffff;
+        color: #666;
+        line-height: 1.5;
+        height: 2000px;
+    }
+    
+    a {
+        color: #666;
+        text-decoration: none;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .app {
+        height: 45px;
+    }
+    
+    .app ul li {
+        float: left;
+        height: 45px;
+        background-color: #333333;
+        text-align: center;
+        line-height: 45px;
+        color: #ffffff;
+    }
+    
+    .app ul li:nth-child(1) {
+        width: 8%;
+    }
+    
+    .app ul li:nth-child(1) img {
+        width: 15px;
+    }
+    
+    .app ul li:nth-child(2) {
+        width: 10%;
+    }
+    
+    .app ul li:nth-child(2) img {
+        width: 30px;
+        vertical-align: middle;
+        /* 使图片对准文字中间而不是基线 */
+    }
+    
+    .app ul li:nth-child(3) {
+        width: 57%;
+    }
+    
+    .app ul li:nth-child(4) {
+        width: 25%;
+        background-color: #f63515;
+    }
+    /* 顶部 */
+    
+    .search-wrap {
+        position: fixed;
+        height: 44px;
+        overflow: hidden;
+        min-width: 320px;
+        max-width: 640px;
+        width: 100%;
+    }
+    
+    .search-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 44px;
+    }
+    
+    .search-btn::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 18px;
+        background: url(../img/threeline.png) no-repeat;
+        margin: 14px 0 0 14px;
+        background-size: 20px 18px;
+    }
+    
+    .search-login {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 44px;
+        width: 40px;
+        color: #ffffff;
+        line-height: 44px;
+    }
+    
+    .search {
+        position: relative;
+        height: 30px;
+        background-color: #ffffff;
+        margin: 0 50px;
+        border-radius: 25px;
+        margin-top: 7px;
+    }
+    
+    .jd-icon {
+        position: absolute;
+        width: 20px;
+        height: 15px;
+        top: 8px;
+        left: 13px;
+        background: url(../img/jd-icon.png) no-repeat;
+        background-size: 20px 15px;
+    }
+    
+    .jd-icon::after {
+        position: absolute;
+        right: -8px;
+        top: 0;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 15px;
+        background-color: #cccccc;
+    }
+    
+    .magnifier {
+        position: absolute;
+        top: 8px;
+        left: 50px;
+        width: 18px;
+        height: 15px;
+        background: url(../img/jd-sprites_c4019063.png) no-repeat -81px 0;
+        /* 定位将要输出的部分 */
+        background-size: 200px auto;
+        /* 此处为从一个大的精灵图中选取一小部分展示出来，其余的部分不会展示 */
+        /* 先将精灵图缩小为合适的大小，然后将定位要输出的位置，最后将背景图片缩小为之前所决定的大小 */
+    }
+    /* 搜索栏 */
+    
+    .slider {
+        background-color: #d83627;
+        width: 100%;
+        height: 220px;
+    }
+    
+    .slider img {
+        margin: 50px 5% 0 5%;
+        width: 90%;
+        border-radius: 10px;
+    }
+    /* 滑动栏 */
+    
+    nav a {
+        float: left;
+        width: 20%;
+        text-align: center;
+    }
+    
+    nav a img {
+        width: 40px;
+        margin: 10px 0;
+    }
+    
+    nav a span {
+        display: block;
+        margin-top: -10px;
+        font-size: 11px;
+    }
